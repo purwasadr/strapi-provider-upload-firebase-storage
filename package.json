@@ -1,7 +1,7 @@
 {
   "name": "@purwasadr/strapi-provider-upload-firebase-storage",
   "version": "0.1.0",
-  "description": "This is plugin for strapi upload provider using firebase storage",
+  "description": "Firebase Storage provider for strapi upload",
   "main": "./libs",
   "directories": {
     "lib": "./lib"
@@ -11,11 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "-"
+    "url": "git://github.com/purwasadr/strapi-provider-upload-firebase-storage.git"
   },
   "keywords": [
     "firebase",
-    "strapi-provider"
+    "storage",
+    "strapi",
+    "upload",
+    "provider"
   ],
   "author": "Purwa Shadr Al Urwa",
   "license": "MIT",
