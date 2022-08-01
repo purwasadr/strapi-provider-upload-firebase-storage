@@ -20,9 +20,9 @@ module.exports = {
 
             storageBucket.file(filename)
                 .save(Buffer.from(file.buffer, "binary"), { 
-                    public: true, 
+                    public: true,
+                    contentType: file.mime,
                     metadata: {
-                        contentType: file.mime,
                         metadata: {
                             firebaseStorageDownloadTokens: token
                         }
