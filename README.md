@@ -34,7 +34,10 @@ module.exports = ({ env }) => ({
 
         // Your bucket name. example : if the bucket URL displayed in the Firebase console 
         // is gs://bucket-name.appspot.com, pass the string bucket-name.appspot.com
-        storageBucket: env('STORAGE_BUCKET_URL'),  
+        storageBucket: env('STORAGE_BUCKET_URL'),
+
+        // Other options in initializeApp
+        options: {},
 
         // Use custom bucket if any
         customBucket: env('STORAGE_CUSTOM_BUCKET'),  
