@@ -7,7 +7,7 @@ module.exports = {
     init(config) {
         initializeApp({
             credential: credential.cert(config.serviceAccount),
-            storageBucket: config.storageBucket,
+            storageBucket: config.bucketName,
             ...config.options,
         });
 
@@ -36,7 +36,7 @@ module.exports = {
                             return reject(err);
                         }
 
-                        file.url = `https://storage.googleapis.com/${config.storageBucket}/${filename}`;
+                        file.url = `https://storage.googleapis.com/${config.bucketName}/${filename}`;
                         resolve();
                     }
                 );
